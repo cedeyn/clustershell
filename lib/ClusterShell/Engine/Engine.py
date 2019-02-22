@@ -30,6 +30,7 @@ import heapq
 import logging
 import sys
 import time
+import datetime
 import traceback
 
 
@@ -40,7 +41,7 @@ E_READ = 0x1
 E_WRITE = 0x2
 
 # Define epsilon value for time float arithmetic operations
-EPSILON = 1.0e-3
+EPSILON = datetime.timedelta(microseconds=1)
 
 # Special fanout value for unlimited
 FANOUT_UNLIMITED = -1
